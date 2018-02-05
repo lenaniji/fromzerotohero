@@ -1,17 +1,17 @@
 import random
- 
+
 print("¡Piedra, papel, tijeras, lagarto o spock!")
- 
+
 contador = 3
 while contador > 0:
     opcion = input("Introduce tu opcion: ")
- 
+
     print("Tu opción es:",opcion)
- 
+
     oponente = random.randint(1,5)
- 
+
     if oponente == 1:
-        opcion_oponente = "piedra"
+        opcion_oponente = "piedra" 
     elif oponente == 2:
         opcion_oponente = "tijeras"
     elif oponente == 3:
@@ -20,10 +20,10 @@ while contador > 0:
         opcion_oponente = "spock"
     else:
         opcion_oponente ="papel"
-       
+        
     print(opcion,opcion_oponente)
     #Rafa guapo
- 
+
     if opcion == opcion_oponente:
         print("¡Has empatado!")
     elif opcion == "piedra":
@@ -71,9 +71,9 @@ while contador > 0:
             print("¡Has ganado!")
         elif opcion_oponente == "tijeras":
             print("¡Has ganado!")
-       
-   
+        
+    
     contador = contador - 1
     print("Queda(n)",contador,"intento(s)")
- 
+
 print("Fin del juego")
