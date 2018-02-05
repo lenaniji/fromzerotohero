@@ -1,0 +1,11 @@
+
+def calculaIVA (factura):
+    iva = 0.21
+
+    factura_iva = factura + factura*iva
+    
+    return factura_iva
+
+
+
+print("El IVA de tu factura es:",calculaIVA(100))
