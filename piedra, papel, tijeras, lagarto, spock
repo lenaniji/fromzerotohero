@@ -1,0 +1,79 @@
+import random
+ 
+print("¡Piedra, papel, tijeras, lagarto o spock!")
+ 
+contador = 3
+while contador > 0:
+    opcion = input("Introduce tu opcion: ")
+ 
+    print("Tu opción es:",opcion)
+ 
+    oponente = random.randint(1,5)
+ 
+    if oponente == 1:
+        opcion_oponente = "piedra"
+    elif oponente == 2:
+        opcion_oponente = "tijeras"
+    elif oponente == 3:
+        opcion_oponente = "lagarto"
+    elif oponente == 4:
+        opcion_oponente = "spock"
+    else:
+        opcion_oponente ="papel"
+       
+    print(opcion,opcion_oponente)
+    #Rafa guapo
+ 
+    if opcion == opcion_oponente:
+        print("¡Has empatado!")
+    elif opcion == "piedra":
+        if opcion_oponente == "tijeras":
+            print("¡Has ganado!")  
+        elif opcion_oponente == "papel":
+            print("¡Has perdido!")
+        elif opcion_oponente == "lagarto":
+            print("¡Has ganado!")
+        elif opcion_oponente == "spock":
+            print("¡Has perdido!")
+    elif opcion == "tijeras":
+        if opcion_oponente == "papel":
+            print("¡Has ganado!")
+        elif opcion_oponente == "piedra":
+            print("¡Has perdido!")
+        elif opcion_oponente == "spock":
+            print("¡Has perdido!")
+        elif opcion_oponente == "lagarto":
+            print("¡Has ganado!")
+    elif opcion == "papel":
+        if opcion_oponente == "piedra":
+            print("¡Has ganado!")
+        elif opcion_oponente == "tijeras":
+            print("¡Has perdido!")
+        elif opcion_oponente == "lagarto":
+            print("¡Has perdido!")
+        elif opcion_oponente == "spock":
+            print("¡Has ganado!")
+    elif opcion == "lagarto":
+        if opcion_oponente == "papel":
+            print("¡Has ganado!")
+        elif opcion_oponente == "spock":
+            print("¡Has ganado!")
+        elif opcion_oponente == "tijeras":
+            print("¡Has perdido!")
+        elif opcion_oponete == "piedra":
+            print("¡Has perdido!")
+    elif opcion == "spock":
+        if opcion_oponente == "lagarto":
+            print("¡Has perdido!")
+        elif opcion_oponente == "papel":
+            print("¡Has perdido!")
+        elif opcion_oponente == "piedra":
+            print("¡Has ganado!")
+        elif opcion_oponente == "tijeras":
+            print("¡Has ganado!")
+       
+   
+    contador = contador - 1
+    print("Queda(n)",contador,"intento(s)")
+ 
+print("Fin del juego")
